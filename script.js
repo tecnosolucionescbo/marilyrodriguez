@@ -104,7 +104,7 @@ function renderPortfolio(filter = 'all', limit = visibleCount) {
             <div class="portfolio-item" data-id="${photo.id}" data-index="${index}">
                 <img src="${photo.src}" alt="${photo.title}" loading="lazy">
                 <div class="portfolio-overlay">
-                    <h3 class="portfolio-overlay-title">${photo.title}</h3>
+                    <!-- Solo mostramos la categoría, sin título -->
                     <span class="portfolio-overlay-category">${getCategoryName(photo.category)}</span>
                 </div>
             </div>
@@ -174,7 +174,7 @@ loadMoreBtn.addEventListener('click', (e) => {
 });
 
 // ============================================
-// LIGHTBOX
+// LIGHTBOX (solo muestra la imagen, sin texto)
 // ============================================
 let currentLightboxIndex = 0;
 
@@ -184,8 +184,9 @@ function openLightbox(id) {
     currentLightboxIndex = currentPhotos.findIndex(p => p.id === id);
     lightboxImg.src = photo.src;
     lightboxImg.alt = photo.title;
-    lightboxTitle.textContent = photo.title;
-    lightboxDesc.textContent = photo.description;
+    // Ocultamos el caption (título y descripción) en la lightbox
+    const caption = document.getElementById('lightboxCaption');
+    if (caption) caption.style.display = 'none';
     lightbox.classList.add('active');
     document.body.style.overflow = 'hidden';
 }
@@ -193,6 +194,9 @@ function openLightbox(id) {
 function closeLightbox() {
     lightbox.classList.remove('active');
     document.body.style.overflow = '';
+    // Restauramos el caption si se vuelve a abrir (opcional)
+    const caption = document.getElementById('lightboxCaption');
+    if (caption) caption.style.display = 'block'; // o 'flex' según el caso, pero no es necesario porque al abrir se oculta de nuevo
 }
 
 function navigateLightbox(direction) {
@@ -205,8 +209,6 @@ function navigateLightbox(direction) {
     const photo = currentPhotos[currentLightboxIndex];
     lightboxImg.src = photo.src;
     lightboxImg.alt = photo.title;
-    lightboxTitle.textContent = photo.title;
-    lightboxDesc.textContent = photo.description;
 }
 
 lightboxClose.addEventListener('click', closeLightbox);
