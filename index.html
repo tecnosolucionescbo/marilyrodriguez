@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marlyn Rodriguez | Fotógrafa Profesional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="images/logo.png" alt="Marlyn Rodriguez Photography" class="logo-img">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#hero" class="nav-link active">Inicio</a>
+                <a href="#about" class="nav-link">Sobre Mí</a>
+                <a href="#services" class="nav-link">Servicios</a>
+                <a href="#portfolio" class="nav-link">Portafolio</a>
+                <a href="#testimonials" class="nav-link">Testimonios</a>
+                <a href="#contact" class="nav-link">Contacto</a>
+            </div>
+            <div class="nav-social">
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="hero-subtitle">Fotógrafa Profesional</p>
+                <h1 class="hero-title">Capturando momentos,<br>creando recuerdos</h1>
+                <p class="hero-quote">"La fotografía es el medio, no el fin"</p>
+                <a href="#portfolio" class="btn btn-primary">Ver Portafolio</a>
+                <a href="#contact" class="btn btn-outline">Contactar</a>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Desplázate</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-img-wrapper">
+                        <img src="images/about.jpg" alt="Marlyn Rodriguez" class="about-img">
+                        <div class="about-img-border"></div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-label">Sobre Mí</span>
+                    <h2 class="section-title">Marlyn Rodriguez</h2>
+                    <p class="about-text">
+                        Soy una fotógrafa apasionada por capturar la esencia de cada momento. 
+                        Con años de experiencia en fotografía profesional, me especializo en 
+                        crear imágenes que cuentan historias y evocan emociones.
+                    </p>
+                    <p class="about-text">
+                        Mi enfoque combina técnica artística con una visión única, 
+                        buscando siempre la luz perfecta y la composición que haga 
+                        brillar cada fotografía.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Sesiones</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label">Años de experiencia</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Clientes felices</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Servicios</span>
+                <h2 class="section-title">¿Qué ofrezco?</h2>
+                <p class="section-desc">Especialidades fotográficas para cada ocasión</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-service="bodas">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="service-title">Fotografía de Bodas</h3>
+                    <p class="service-desc">
+                        El día de tu boda está hecho para ser vivido. Mi trabajo es contar 
+                        tu historia de amor a través de imágenes inolvidables.
+                    </p>
+                    <a href="#portfolio" class="service-link">Ver galería <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-service="retratos">
+                    <div class="service-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="service-title">Retratos</h3>
+                    <p class="service-desc">
+                        El arte del retrato permite contar la esencia de las personas. 
+                        El ser humano al centro de cada fotografía.
+                    </p>
+                    <a href="#portfolio" class="service-link">Ver galería <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-service="moda">
+                    <div class="service-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3 class="service-title">Fotografía de Moda</h3>
+                    <p class="service-desc">
+                        Servicios fotográficos para catálogos, books, shooting de colecciones 
+                        y publicidad para marcas y diseñadores.
+                    </p>
+                    <a href="#portfolio" class="service-link">Ver galería <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-service="eventos">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-star"></i>
+                    </div>
+                    <h3 class="service-title">Eventos & Reportajes</h3>
+                    <p class="service-desc">
+                        Reportajes fotográficos que capturan la esencia de cada evento. 
+                        Contar historias a través de imágenes es mi pasión.
+                    </p>
+                    <a href="#portfolio" class="service-link">Ver galería <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-service="familia">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="service-title">Fotografía Familiar</h3>
+                    <p class="service-desc">
+                        Sesiones familiares que capturan la conexión y el amor 
+                        entre los miembros de tu familia.
+                    </p>
+                    <a href="#portfolio" class="service-link">Ver galería <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-service="comercial">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="service-title">Fotografía Comercial</h3>
+                    <p class="service-desc">
+                        Fotografía corporativa para valorizar tu empresa, productos 
+                        y procesos productivos.
+                    </p>
+                    <a href="#portfolio" class="service-link">Ver galería <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Portafolio</span>
+                <h2 class="section-title">Mis Trabajos</h2>
+                <p class="section-desc">Una selección de mis mejores fotografías</p>
+            </div>
+
+            <!-- Portfolio Filters -->
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Todo</button>
+                <button class="filter-btn" data-filter="bodas">Bodas</button>
+                <button class="filter-btn" data-filter="retratos">Retratos</button>
+                <button class="filter-btn" data-filter="moda">Moda</button>
+                <button class="filter-btn" data-filter="eventos">Eventos</button>
+                <button class="filter-btn" data-filter="familia">Familia</button>
+                <button class="filter-btn" data-filter="comercial">Comercial</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Las fotos se cargan dinámicamente desde photos.json -->
+            </div>
+
+            <div class="portfolio-more">
+                <a href="#" class="btn btn-primary" id="loadMoreBtn">Cargar Más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+            <button class="lightbox-nav lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+            <div class="lightbox-img-wrapper">
+                <img src="" alt="" class="lightbox-img" id="lightboxImg">
+                <div class="lightbox-caption" id="lightboxCaption">
+                    <h3 class="lightbox-title"></h3>
+                    <p class="lightbox-desc"></p>
+                </div>
+            </div>
+            <button class="lightbox-nav lightbox-next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Testimonios</span>
+                <h2 class="section-title">Lo que dicen mis clientes</h2>
+            </div>
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Marlyn capturó cada momento de nuestra boda de una manera mágica. 
+                            Las fotos son simplemente espectaculares y nos hacen revivir ese día 
+                            cada vez que las vemos."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial1.jpg" alt="Cliente" class="testimonial-avatar">
+                            <div class="testimonial-info">
+                                <h4 class="testimonial-name">Ana & Carlos</h4>
+                                <span class="testimonial-service">Boda</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Profesionalismo y creatividad en cada sesión. Marlyn tiene un don 
+                            para hacer sentir cómodo a cualquiera frente a la cámara. 
+                            ¡Las fotos superaron todas mis expectativas!"
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial2.jpg" alt="Cliente" class="testimonial-avatar">
+                            <div class="testimonial-info">
+                                <h4 class="testimonial-name">María Fernanda</h4>
+                                <span class="testimonial-service">Sesión de Retratos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Contratamos a Marlyn para las fotos de nuestro evento corporativo 
+                            y el resultado fue increíble. Capturó la esencia de nuestra marca 
+                            perfectamente."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial3.jpg" alt="Cliente" class="testimonial-avatar">
+                            <div class="testimonial-info">
+                                <h4 class="testimonial-name">Empresa XYZ</h4>
+                                <span class="testimonial-service">Fotografía Comercial</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-nav">
+                <button class="testimonial-dot active" data-slide="0"></button>
+                <button class="testimonial-dot" data-slide="1"></button>
+                <button class="testimonial-dot" data-slide="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-label">Contacto</span>
+                    <h2 class="section-title">¿Hablemos?</h2>
+                    <p class="contact-desc">
+                        ¿Tienes un proyecto en mente? Me encantaría escuchar sobre él. 
+                        Completa el formulario o contáctame directamente.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:contacto@marlynrodriguez.com">contacto@marlynrodriguez.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Teléfono</span>
+                                <a href="tel:+1234567890">+1 234 567 890</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Ubicación</span>
+                                <span>Disponible para viajes</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Tipo de Servicio</label>
+                            <select id="service" name="service" required>
+                                <option value="">Selecciona un servicio</option>
+                                <option value="bodas">Fotografía de Bodas</option>
+                                <option value="retratos">Retratos</option>
+                                <option value="moda">Fotografía de Moda</option>
+                                <option value="eventos">Eventos & Reportajes</option>
+                                <option value="familia">Fotografía Familiar</option>
+                                <option value="comercial">Fotografía Comercial</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Fecha del Evento (aproximada)</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Cuéntame sobre tu proyecto..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="Marlyn Rodriguez Photography" class="footer-logo">
+                    <p class="footer-desc">
+                        Capturando momentos y creando recuerdos que duran para siempre.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-title">Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#about">Sobre Mí</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#portfolio">Portafolio</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4 class="footer-title">Servicios</h4>
+                    <ul>
+                        <li><a href="#services">Bodas</a></li>
+                        <li><a href="#services">Retratos</a></li>
+                        <li><a href="#services">Moda</a></li>
+                        <li><a href="#services">Eventos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4 class="footer-title">Sígueme</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p> Marlyn Rodriguez Photography. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

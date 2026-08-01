@@ -1,0 +1,89 @@
+{
+  "_comentario": "Edita este archivo para agregar, eliminar o modificar fotos del portafolio. Cada foto necesita: id (único), src (ruta de la imagen), title (título), description (descripción), category (categoría: bodas, retratos, moda, eventos, familia, comercial)",
+  "photos": [
+    {
+      "id": 1,
+      "src": "images/portfolio/boda1.jpg",
+      "title": "Boda en la Playa",
+      "description": "Una ceremonia íntima al atardecer con vistas al océano.",
+      "category": "bodas"
+    },
+    {
+      "id": 2,
+      "src": "images/portfolio/retrato1.jpg",
+      "title": "Retrato Artístico",
+      "description": "Sesión de retrato en estudio con iluminación natural.",
+      "category": "retratos"
+    },
+    {
+      "id": 3,
+      "src": "images/portfolio/moda1.jpg",
+      "title": "Colección Primavera",
+      "description": "Shooting para la nueva colección de primavera.",
+      "category": "moda"
+    },
+    {
+      "id": 4,
+      "src": "images/portfolio/evento1.jpg",
+      "title": "Evento Corporativo",
+      "description": "Cobertura del evento anual de la empresa.",
+      "category": "eventos"
+    },
+    {
+      "id": 5,
+      "src": "images/portfolio/familia1.jpg",
+      "title": "Sesión Familiar",
+      "description": "Una tarde divertida capturando momentos familiares.",
+      "category": "familia"
+    },
+    {
+      "id": 6,
+      "src": "images/portfolio/comercial1.jpg",
+      "title": "Producto Gourmet",
+      "description": "Fotografía de producto para catálogo gourmet.",
+      "category": "comercial"
+    },
+    {
+      "id": 7,
+      "src": "images/portfolio/boda2.jpg",
+      "title": "Primera Mirada",
+      "description": "El momento más emotivo del día de la boda.",
+      "category": "bodas"
+    },
+    {
+      "id": 8,
+      "src": "images/portfolio/retrato2.jpg",
+      "title": "Retrato en Exteriores",
+      "description": "Sesión de retrato en el parque al atardecer.",
+      "category": "retratos"
+    },
+    {
+      "id": 9,
+      "src": "images/portfolio/moda2.jpg",
+      "title": "Editorial de Moda",
+      "description": "Editorial para revista de moda local.",
+      "category": "moda"
+    },
+    {
+      "id": 10,
+      "src": "images/portfolio/familia2.jpg",
+      "title": "Maternidad",
+      "description": "Sesión de fotos de maternidad en exteriores.",
+      "category": "familia"
+    },
+    {
+      "id": 11,
+      "src": "images/portfolio/boda3.jpg",
+      "title": "Recepción",
+      "description": "La celebración continúa con música y baile.",
+      "category": "bodas"
+    },
+    {
+      "id": 12,
+      "src": "images/portfolio/comercial2.jpg",
+      "title": "Arquitectura",
+      "description": "Fotografía arquitectónica para desarrolladora.",
+      "category": "comercial"
+    }
+  ]
+}
