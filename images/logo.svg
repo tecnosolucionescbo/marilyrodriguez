@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+      .title { font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: 38px; fill: #ffffff; letter-spacing: 2px; }
+      .sub { font-family: 'Lato', sans-serif; font-weight: 300; font-size: 11px; fill: #c9a96e; letter-spacing: 4px; text-transform: uppercase; }
+    </style>
+  </defs>
+  <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" class="title">Marlyn Rodriguez</text>
+  <text x="50%" y="82%" text-anchor="middle" dominant-baseline="middle" class="sub">Photography</text>
+</svg>
