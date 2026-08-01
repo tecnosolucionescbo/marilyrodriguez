@@ -73,35 +73,35 @@
     },
     {
       "id": 11,
-      "src": "images/portfolio/avefoca1.jpg",
+      "src": "images/portfolio/avecofa1.jpg",
       "title": "Aula en movimiento",
       "description": "Espacio de aprendizaje y colaboración.",
       "category": "formacion"
     },
     {
       "id": 12,
-      "src": "images/portfolio/avefoca2.jpg",
+      "src": "images/portfolio/avecofa2.jpg",
       "title": "Taller creativo",
       "description": "Manos que construyen conocimiento.",
       "category": "formacion"
     },
     {
       "id": 13,
-      "src": "images/portfolio/avefoca3.jpg",
+      "src": "images/portfolio/avecofa3.jpg",
       "title": "Seminario",
       "description": "Intercambio de ideas en un foro educativo.",
       "category": "formacion"
     },
     {
       "id": 14,
-      "src": "images/portfolio/avefoca4.jpg",
+      "src": "images/portfolio/avecofa4.jpg",
       "title": "Práctica de campo",
       "description": "Aprendizaje fuera del aula.",
       "category": "formacion"
     },
     {
       "id": 15,
-      "src": "images/portfolio/avefoca5.jpg",
+      "src": "images/portfolio/avecofa5.jpg",
       "title": "Grupo de estudio",
       "description": "Trabajo en equipo y diálogo.",
       "category": "formacion"
