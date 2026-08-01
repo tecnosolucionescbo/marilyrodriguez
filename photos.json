@@ -24,14 +24,14 @@
     },
     {
       "id": 4,
-      "src": "images/portfolio/natu4.jpg",
+      "src": "images/portfolio/natu4.jpeg",
       "title": "Atardecer en el lago",
       "description": "Reflejos naranjas y paz absoluta.",
       "category": "naturaleza"
     },
     {
       "id": 5,
-      "src": "images/portfolio/natu5.jpg",
+      "src": "images/portfolio/natu5.jpeg",
       "title": "Sendero de montaña",
       "description": "Camino que invita a explorar la naturaleza.",
       "category": "naturaleza"
