@@ -10,28 +10,28 @@
     },
     {
       "id": 2,
-      "src": "images/portfolio/naturaleza2.jpg",
+      "src": "images/portfolio/natu2.jpeg",
       "title": "Río de montaña",
       "description": "Agua cristalina bajando entre rocas.",
       "category": "naturaleza"
     },
     {
       "id": 3,
-      "src": "images/portfolio/naturaleza3.jpg",
+      "src": "images/portfolio/natu3.jpeg",
       "title": "Flores silvestres",
       "description": "Color y vida en un prado natural.",
       "category": "naturaleza"
     },
     {
       "id": 4,
-      "src": "images/portfolio/naturaleza4.jpg",
+      "src": "images/portfolio/natu4.jpg",
       "title": "Atardecer en el lago",
       "description": "Reflejos naranjas y paz absoluta.",
       "category": "naturaleza"
     },
     {
       "id": 5,
-      "src": "images/portfolio/naturaleza5.jpg",
+      "src": "images/portfolio/natu5.jpg",
       "title": "Sendero de montaña",
       "description": "Camino que invita a explorar la naturaleza.",
       "category": "naturaleza"
