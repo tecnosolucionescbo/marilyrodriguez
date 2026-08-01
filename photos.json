@@ -3,9 +3,9 @@
   "photos": [
     {
       "id": 1,
-      "src": "images/portfolio/boda1.jpg",
-      "title": "Boda en la Playa",
-      "description": "Una ceremonia íntima al atardecer con vistas al océano.",
+      "src": "images/portfolio/natu1.jpeg",
+      "title": "Amanecer en el bosque",
+      "description": "Luz dorada entre los árboles al amanecer.",
       "category": "bodas"
     },
     {
@@ -45,9 +45,9 @@
     },
     {
       "id": 7,
-      "src": "images/portfolio/boda2.jpg",
-      "title": "Primera Mirada",
-      "description": "El momento más emotivo del día de la boda.",
+      "src": "images/portfolio/natu2.jpeg",
+      "title": "Río de montaña",
+      "description": "Agua cristalina bajando entre rocas.",
       "category": "bodas"
     },
     {
@@ -73,9 +73,9 @@
     },
     {
       "id": 11,
-      "src": "images/portfolio/boda3.jpg",
-      "title": "Recepción",
-      "description": "La celebración continúa con música y baile.",
+      "src": "images/portfolio/natu3.jpeg",
+      "title": "Flores silvestres",
+      "description": "Color y vida en un prado natural.",
       "category": "bodas"
     },
     {
@@ -84,6 +84,20 @@
       "title": "Arquitectura",
       "description": "Fotografía arquitectónica para desarrolladora.",
       "category": "comercial"
+    },
+    {
+      "id": 13,
+      "src": "images/portfolio/natu4.jpeg",
+      "title": "Atardecer en el lago",
+      "description": "Reflejos naranjas y paz absoluta.",
+      "category": "bodas"
+    },
+    {
+      "id": 14,
+      "src": "images/portfolio/natu5.jpeg",
+      "title": "Sendero de montaña",
+      "description": "Camino que invita a explorar la naturaleza.",
+      "category": "bodas"
     }
   ]
 }
