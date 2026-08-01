@@ -4,95 +4,9 @@
    ============================================ */
 
 // ============================================
-// PHOTOS DATA - FÁCIL DE EDITAR
-// Tu cliente puede agregar/editar fotos aquí
+// PHOTOS DATA - Se carga desde photos.json
 // ============================================
-const photosData = [
-    {
-        id: 1,
-        src: "images/portfolio/boda1.jpg",
-        title: "Boda en la Playa",
-        description: "Una ceremonia íntima al atardecer con vistas al océano.",
-        category: "bodas"
-    },
-    {
-        id: 2,
-        src: "images/portfolio/retrato1.jpg",
-        title: "Retrato Artístico",
-        description: "Sesión de retrato en estudio con iluminación natural.",
-        category: "retratos"
-    },
-    {
-        id: 3,
-        src: "images/portfolio/moda1.jpg",
-        title: "Colección Primavera",
-        description: "Shooting para la nueva colección de primavera.",
-        category: "moda"
-    },
-    {
-        id: 4,
-        src: "images/portfolio/evento1.jpg",
-        title: "Evento Corporativo",
-        description: "Cobertura del evento anual de la empresa.",
-        category: "eventos"
-    },
-    {
-        id: 5,
-        src: "images/portfolio/familia1.jpg",
-        title: "Sesión Familiar",
-        description: "Una tarde divertida capturando momentos familiares.",
-        category: "familia"
-    },
-    {
-        id: 6,
-        src: "images/portfolio/comercial1.jpg",
-        title: "Producto Gourmet",
-        description: "Fotografía de producto para catálogo gourmet.",
-        category: "comercial"
-    },
-    {
-        id: 7,
-        src: "images/portfolio/boda2.jpg",
-        title: "Primera Mirada",
-        description: "El momento más emotivo del día de la boda.",
-        category: "bodas"
-    },
-    {
-        id: 8,
-        src: "images/portfolio/retrato2.jpg",
-        title: "Retrato en Exteriores",
-        description: "Sesión de retrato en el parque al atardecer.",
-        category: "retratos"
-    },
-    {
-        id: 9,
-        src: "images/portfolio/moda2.jpg",
-        title: "Editorial de Moda",
-        description: "Editorial para revista de moda local.",
-        category: "moda"
-    },
-    {
-        id: 10,
-        src: "images/portfolio/familia2.jpg",
-        title: "Maternidad",
-        description: "Sesión de fotos de maternidad en exteriores.",
-        category: "familia"
-    },
-    {
-        id: 11,
-        src: "images/portfolio/boda3.jpg",
-        title: "Recepción",
-        description: "La celebración continúa con música y baile.",
-        category: "bodas"
-    },
-    {
-        id: 12,
-        src: "images/portfolio/comercial2.jpg",
-        title: "Arquitectura",
-        description: "Fotografía arquitectónica para desarrolladora.",
-        category: "comercial"
-    }
-];
+let photosData = [];
 
 // ============================================
 // DOM Elements
@@ -123,8 +37,6 @@ window.addEventListener('scroll', () => {
     } else {
         navbar.classList.remove('scrolled');
     }
-
-    // Active nav link based on scroll position
     updateActiveNavLink();
 });
 
@@ -137,7 +49,6 @@ hamburger.addEventListener('click', () => {
     document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
 });
 
-// Close mobile menu when clicking a link
 navLinks.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
         hamburger.classList.remove('active');
@@ -152,12 +63,10 @@ navLinks.querySelectorAll('.nav-link').forEach(link => {
 function updateActiveNavLink() {
     const sections = document.querySelectorAll('section[id]');
     const scrollPos = window.scrollY + 100;
-
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
         const sectionId = section.getAttribute('id');
-
         if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.classList.remove('active');
@@ -177,23 +86,31 @@ let visibleCount = 6;
 let currentPhotos = [];
 
 function renderPortfolio(filter = 'all', limit = visibleCount) {
+    if (!photosData.length) {
+        portfolioGrid.innerHTML = '<p>Cargando fotos...</p>';
+        return;
+    }
+
     currentPhotos = filter === 'all' 
         ? photosData 
         : photosData.filter(photo => photo.category === filter);
 
     const photosToShow = currentPhotos.slice(0, limit);
 
-    portfolioGrid.innerHTML = photosToShow.map((photo, index) => `
-        <div class="portfolio-item" data-id="${photo.id}" data-index="${index}">
-            <img src="${photo.src}" alt="${photo.title}" loading="lazy">
-            <div class="portfolio-overlay">
-                <h3 class="portfolio-overlay-title">${photo.title}</h3>
-                <span class="portfolio-overlay-category">${getCategoryName(photo.category)}</span>
+    if (photosToShow.length === 0) {
+        portfolioGrid.innerHTML = '<p>No hay fotos en esta categoría.</p>';
+    } else {
+        portfolioGrid.innerHTML = photosToShow.map((photo, index) => `
+            <div class="portfolio-item" data-id="${photo.id}" data-index="${index}">
+                <img src="${photo.src}" alt="${photo.title}" loading="lazy">
+                <div class="portfolio-overlay">
+                    <h3 class="portfolio-overlay-title">${photo.title}</h3>
+                    <span class="portfolio-overlay-category">${getCategoryName(photo.category)}</span>
+                </div>
             </div>
-        </div>
-    `).join('');
+        `).join('');
+    }
 
-    // Add click events to portfolio items
     document.querySelectorAll('.portfolio-item').forEach(item => {
         item.addEventListener('click', () => {
             const id = parseInt(item.dataset.id);
@@ -201,13 +118,12 @@ function renderPortfolio(filter = 'all', limit = visibleCount) {
         });
     });
 
-    // Show/hide load more button
     loadMoreBtn.style.display = currentPhotos.length > limit ? 'inline-block' : 'none';
 }
 
 function getCategoryName(category) {
     const names = {
-        bodas: 'Bodas',
+        bodas: 'Naturaleza',
         retratos: 'Retratos',
         moda: 'Moda',
         eventos: 'Eventos',
@@ -215,6 +131,22 @@ function getCategoryName(category) {
         comercial: 'Comercial'
     };
     return names[category] || category;
+}
+
+// ============================================
+// CARGAR FOTOS DESDE JSON EXTERNO
+// ============================================
+async function loadPhotos() {
+    try {
+        const response = await fetch('photos.json');
+        if (!response.ok) throw new Error('No se pudo cargar photos.json');
+        const data = await response.json();
+        photosData = data.photos || data;
+        renderPortfolio(currentFilter, visibleCount);
+    } catch (error) {
+        console.error('Error cargando photos.json:', error);
+        portfolioGrid.innerHTML = '<p>Error al cargar las fotos. Por favor, recarga la página.</p>';
+    }
 }
 
 // ============================================
@@ -247,14 +179,11 @@ let currentLightboxIndex = 0;
 function openLightbox(id) {
     const photo = photosData.find(p => p.id === id);
     if (!photo) return;
-
     currentLightboxIndex = currentPhotos.findIndex(p => p.id === id);
-
     lightboxImg.src = photo.src;
     lightboxImg.alt = photo.title;
     lightboxTitle.textContent = photo.title;
     lightboxDesc.textContent = photo.description;
-
     lightbox.classList.add('active');
     document.body.style.overflow = 'hidden';
 }
@@ -266,13 +195,11 @@ function closeLightbox() {
 
 function navigateLightbox(direction) {
     if (currentPhotos.length === 0) return;
-
     if (direction === 'next') {
         currentLightboxIndex = (currentLightboxIndex + 1) % currentPhotos.length;
     } else {
         currentLightboxIndex = (currentLightboxIndex - 1 + currentPhotos.length) % currentPhotos.length;
     }
-
     const photo = currentPhotos[currentLightboxIndex];
     lightboxImg.src = photo.src;
     lightboxImg.alt = photo.title;
@@ -283,18 +210,11 @@ function navigateLightbox(direction) {
 lightboxClose.addEventListener('click', closeLightbox);
 lightboxPrev.addEventListener('click', () => navigateLightbox('prev'));
 lightboxNext.addEventListener('click', () => navigateLightbox('next'));
-
-// Close lightbox on background click
 lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) {
-        closeLightbox();
-    }
+    if (e.target === lightbox) closeLightbox();
 });
-
-// Keyboard navigation
 document.addEventListener('keydown', (e) => {
     if (!lightbox.classList.contains('active')) return;
-
     if (e.key === 'Escape') closeLightbox();
     if (e.key === 'ArrowLeft') navigateLightbox('prev');
     if (e.key === 'ArrowRight') navigateLightbox('next');
@@ -341,12 +261,6 @@ testimonialDots.forEach((dot, index) => {
 // ============================================
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-
-    const formData = new FormData(contactForm);
-    const data = Object.fromEntries(formData);
-
-    // Aquí puedes integrar con EmailJS, Formspree, o tu backend
-    // Por ahora, mostramos un mensaje de éxito
     alert('¡Gracias por tu mensaje! Te contactaré pronto.');
     contactForm.reset();
 });
@@ -356,12 +270,10 @@ contactForm.addEventListener('submit', (e) => {
 // ============================================
 function revealOnScroll() {
     const reveals = document.querySelectorAll('.reveal');
-
     reveals.forEach(element => {
         const windowHeight = window.innerHeight;
         const elementTop = element.getBoundingClientRect().top;
         const elementVisible = 100;
-
         if (elementTop < windowHeight - elementVisible) {
             element.classList.add('active');
         }
@@ -390,30 +302,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // INITIALIZE
 // ============================================
 document.addEventListener('DOMContentLoaded', () => {
-    renderPortfolio();
+    loadPhotos();   // <--- Carga los datos desde photos.json
     startSlider();
-
-    // Add reveal class to sections
     document.querySelectorAll('section').forEach(section => {
         section.classList.add('reveal');
     });
-
     window.addEventListener('scroll', revealOnScroll);
-    revealOnScroll(); // Trigger once on load
+    revealOnScroll();
 });
-
-// ============================================
-// CARGAR FOTOS DESDE JSON EXTERNO (opcional)
-// Si tu cliente prefiere editar un archivo JSON
-// ============================================
-/*
-// Descomenta esto si quieres cargar desde un archivo JSON externo:
-fetch('photos.json')
-    .then(response => response.json())
-    .then(data => {
-        photosData.length = 0;
-        photosData.push(...data);
-        renderPortfolio();
-    })
-    .catch(error => console.log('Usando datos por defecto'));
-*/
