@@ -98,7 +98,7 @@ img {
 }
 
 .logo-img {
-    height: 50px;
+    height: 60px;
     width: auto;
        /*  filter: brightness(0) invert(1); */
     transition: var(--transition);
