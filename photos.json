@@ -1,5 +1,5 @@
 {
-  "_comentario": "65 fotos - 5 por cada categoría: Naturaleza, Arquitectura, Clave Baja, Clave Alta, Avecofa, Deporte, Desnudos Artísticos, Paisajes, Viajes, Retratos, Graduación, Estudio, Comunión",
+  "_comentario": "Fotos del portafolio - 5 por categoría (Naturaleza, Deporte, Formación, Retratos, Fotos Estudio)",
   "photos": [
     {
       "id": 1,
@@ -38,423 +38,143 @@
     },
     {
       "id": 6,
-      "src": "images/portfolio/arquitectura1.jpg",
-      "title": "Rascacielos moderno",
-      "description": "Líneas verticales y vidrio reflectante.",
-      "category": "arquitectura"
-    },
-    {
-      "id": 7,
-      "src": "images/portfolio/arquitectura2.jpg",
-      "title": "Puente colgante",
-      "description": "Estructura y geometría sobre el agua.",
-      "category": "arquitectura"
-    },
-    {
-      "id": 8,
-      "src": "images/portfolio/arquitectura3.jpg",
-      "title": "Edificio histórico",
-      "description": "Detalles ornamentales y fachada clásica.",
-      "category": "arquitectura"
-    },
-    {
-      "id": 9,
-      "src": "images/portfolio/arquitectura4.jpg",
-      "title": "Museo contemporáneo",
-      "description": "Formas curvas y espacios abiertos.",
-      "category": "arquitectura"
-    },
-    {
-      "id": 10,
-      "src": "images/portfolio/arquitectura5.jpg",
-      "title": "Pasaje urbano",
-      "description": "Juego de luces y sombras en la ciudad.",
-      "category": "arquitectura"
-    },
-    {
-      "id": 11,
-      "src": "images/portfolio/clave_baja1.jpg",
-      "title": "Retrato dramático",
-      "description": "Fuerte contraste y atmósfera misteriosa.",
-      "category": "clave_baja"
-    },
-    {
-      "id": 12,
-      "src": "images/portfolio/clave_baja2.jpg",
-      "title": "Bodegón en penumbra",
-      "description": "Objetos iluminados por un foco de luz.",
-      "category": "clave_baja"
-    },
-    {
-      "id": 13,
-      "src": "images/portfolio/clave_baja3.jpg",
-      "title": "Silueta nocturna",
-      "description": "Figura humana contra el fondo oscuro.",
-      "category": "clave_baja"
-    },
-    {
-      "id": 14,
-      "src": "images/portfolio/clave_baja4.jpg",
-      "title": "Naturaleza en sombras",
-      "description": "Árboles y niebla en tonos profundos.",
-      "category": "clave_baja"
-    },
-    {
-      "id": 15,
-      "src": "images/portfolio/clave_baja5.jpg",
-      "title": "Escena callejera",
-      "description": "Luz artificial y contrastes urbanos.",
-      "category": "clave_baja"
-    },
-    {
-      "id": 16,
-      "src": "images/portfolio/clave_alta1.jpg",
-      "title": "Blanco y luz",
-      "description": "Alta luminosidad y tonos claros.",
-      "category": "clave_alta"
-    },
-    {
-      "id": 17,
-      "src": "images/portfolio/clave_alta2.jpg",
-      "title": "Retrato de estudio",
-      "description": "Iluminación suave y fondo neutro.",
-      "category": "clave_alta"
-    },
-    {
-      "id": 18,
-      "src": "images/portfolio/clave_alta3.jpg",
-      "title": "Paisaje nevado",
-      "description": "Blancura y brillo en la montaña.",
-      "category": "clave_alta"
-    },
-    {
-      "id": 19,
-      "src": "images/portfolio/clave_alta4.jpg",
-      "title": "Minimalismo",
-      "description": "Composición limpia y colores pastel.",
-      "category": "clave_alta"
-    },
-    {
-      "id": 20,
-      "src": "images/portfolio/clave_alta5.jpg",
-      "title": "Playa al mediodía",
-      "description": "Luz intensa y arena brillante.",
-      "category": "clave_alta"
-    },
-    {
-      "id": 21,
-      "src": "images/portfolio/avecofa1.jpg",
-      "title": "Ave en vuelo",
-      "description": "Captura de un ave en movimiento.",
-      "category": "avecofa"
-    },
-    {
-      "id": 22,
-      "src": "images/portfolio/avecofa2.jpg",
-      "title": "Colibrí en flor",
-      "description": "Detalle de un colibrí alimentándose.",
-      "category": "avecofa"
-    },
-    {
-      "id": 23,
-      "src": "images/portfolio/avecofa3.jpg",
-      "title": "Ave rapaz",
-      "description": "Mirada penetrante de un halcón.",
-      "category": "avecofa"
-    },
-    {
-      "id": 24,
-      "src": "images/portfolio/avecofa4.jpg",
-      "title": "Bandada en el cielo",
-      "description": "Sincronía de aves migratorias.",
-      "category": "avecofa"
-    },
-    {
-      "id": 25,
-      "src": "images/portfolio/avecofa5.jpg",
-      "title": "Ave exótica",
-      "description": "Colorido plumaje en la selva.",
-      "category": "avecofa"
-    },
-    {
-      "id": 26,
       "src": "images/portfolio/deporte1.jpg",
       "title": "Fútbol en acción",
       "description": "Momento decisivo en un partido.",
       "category": "deporte"
     },
     {
-      "id": 27,
+      "id": 7,
       "src": "images/portfolio/deporte2.jpg",
       "title": "Atleta en salto",
-      "description": "Esfuerzo y potencia en movimiento.",
+      "description": "Esfuerzo y gracia en el aire.",
       "category": "deporte"
     },
     {
-      "id": 28,
+      "id": 8,
       "src": "images/portfolio/deporte3.jpg",
-      "title": "Ciclismo de montaña",
-      "description": "Adrenalina y naturaleza en una ruta.",
+      "title": "Ciclista en ruta",
+      "description": "Velocidad y resistencia sobre dos ruedas.",
       "category": "deporte"
     },
     {
-      "id": 29,
+      "id": 9,
       "src": "images/portfolio/deporte4.jpg",
-      "title": "Natación competitiva",
-      "description": "Velocidad y técnica en el agua.",
+      "title": "Natación de fondo",
+      "description": "Fuerza y precisión en el agua.",
       "category": "deporte"
     },
     {
-      "id": 30,
+      "id": 10,
       "src": "images/portfolio/deporte5.jpg",
-      "title": "Baloncesto urbano",
-      "description": "Partido callejero con energía vibrante.",
+      "title": "Baloncesto",
+      "description": "Tiro perfecto bajo presión.",
       "category": "deporte"
     },
     {
-      "id": 31,
-      "src": "images/portfolio/desnudo1.jpg",
-      "title": "Desnudo artístico",
-      "description": "Estudio de luces y formas humanas.",
-      "category": "desnudos_artisticos"
+      "id": 11,
+      "src": "images/portfolio/avefoca1.jpg",
+      "title": "Aula en movimiento",
+      "description": "Espacio de aprendizaje y colaboración.",
+      "category": "formacion"
     },
     {
-      "id": 32,
-      "src": "images/portfolio/desnudo2.jpg",
-      "title": "Desnudo femenino",
-      "description": "Belleza y suavidad en la piel.",
-      "category": "desnudos_artisticos"
+      "id": 12,
+      "src": "images/portfolio/avefoca2.jpg",
+      "title": "Taller creativo",
+      "description": "Manos que construyen conocimiento.",
+      "category": "formacion"
     },
     {
-      "id": 33,
-      "src": "images/portfolio/desnudo3.jpg",
-      "title": "Desnudo masculino",
-      "description": "Fuerza y elegancia en la figura.",
-      "category": "desnudos_artisticos"
+      "id": 13,
+      "src": "images/portfolio/avefoca3.jpg",
+      "title": "Seminario",
+      "description": "Intercambio de ideas en un foro educativo.",
+      "category": "formacion"
     },
     {
-      "id": 34,
-      "src": "images/portfolio/desnudo4.jpg",
-      "title": "Desnudo en la naturaleza",
-      "description": "Cuerpo humano integrado en el paisaje.",
-      "category": "desnudos_artisticos"
+      "id": 14,
+      "src": "images/portfolio/avefoca4.jpg",
+      "title": "Práctica de campo",
+      "description": "Aprendizaje fuera del aula.",
+      "category": "formacion"
     },
     {
-      "id": 35,
-      "src": "images/portfolio/desnudo5.jpg",
-      "title": "Desnudo en blanco y negro",
-      "description": "Monocromía y textura.",
-      "category": "desnudos_artisticos"
+      "id": 15,
+      "src": "images/portfolio/avefoca5.jpg",
+      "title": "Grupo de estudio",
+      "description": "Trabajo en equipo y diálogo.",
+      "category": "formacion"
     },
     {
-      "id": 36,
-      "src": "images/portfolio/paisaje1.jpg",
-      "title": "Montañas al atardecer",
-      "description": "Horizonte infinito y colores cálidos.",
-      "category": "paisajes"
-    },
-    {
-      "id": 37,
-      "src": "images/portfolio/paisaje2.jpg",
-      "title": "Lago cristalino",
-      "description": "Reflejo perfecto de los picos nevados.",
-      "category": "paisajes"
-    },
-    {
-      "id": 38,
-      "src": "images/portfolio/paisaje3.jpg",
-      "title": "Bosque otoñal",
-      "description": "Hojas doradas y naranjas iluminadas.",
-      "category": "paisajes"
-    },
-    {
-      "id": 39,
-      "src": "images/portfolio/paisaje4.jpg",
-      "title": "Desierto infinito",
-      "description": "Dunas y soledad en el horizonte.",
-      "category": "paisajes"
-    },
-    {
-      "id": 40,
-      "src": "images/portfolio/paisaje5.jpg",
-      "title": "Cascada en la selva",
-      "description": "Fuerza y frescura de la naturaleza.",
-      "category": "paisajes"
-    },
-    {
-      "id": 41,
-      "src": "images/portfolio/viaje1.jpg",
-      "title": "Mercado callejero",
-      "description": "Colores y sabores de un mercado local.",
-      "category": "viajes"
-    },
-    {
-      "id": 42,
-      "src": "images/portfolio/viaje2.jpg",
-      "title": "Templo antiguo",
-      "description": "Arquitectura sagrada y tradición.",
-      "category": "viajes"
-    },
-    {
-      "id": 43,
-      "src": "images/portfolio/viaje3.jpg",
-      "title": "Atardecer en la playa",
-      "description": "Tranquilidad y belleza costera.",
-      "category": "viajes"
-    },
-    {
-      "id": 44,
-      "src": "images/portfolio/viaje4.jpg",
-      "title": "Calle empedrada",
-      "description": "Rincones con historia de un pueblo europeo.",
-      "category": "viajes"
-    },
-    {
-      "id": 45,
-      "src": "images/portfolio/viaje5.jpg",
-      "title": "Mural urbano",
-      "description": "Arte callejero y cultura local.",
-      "category": "viajes"
-    },
-    {
-      "id": 46,
+      "id": 16,
       "src": "images/portfolio/retrato1.jpg",
       "title": "Retrato en estudio",
       "description": "Iluminación suave y fondo neutro.",
       "category": "retratos"
     },
     {
-      "id": 47,
+      "id": 17,
       "src": "images/portfolio/retrato2.jpg",
       "title": "Retrato al aire libre",
-      "description": "Luz natural y sonrisa espontánea.",
+      "description": "Luz natural y entorno urbano.",
       "category": "retratos"
     },
     {
-      "id": 48,
+      "id": 18,
       "src": "images/portfolio/retrato3.jpg",
       "title": "Retrato en blanco y negro",
-      "description": "Expresión y contraste en monocromo.",
+      "description": "Juego de sombras y expresiones.",
       "category": "retratos"
     },
     {
-      "id": 49,
+      "id": 19,
       "src": "images/portfolio/retrato4.jpg",
-      "title": "Retrato de pareja",
-      "description": "Conexión y complicidad en una mirada.",
+      "title": "Retrato de familia",
+      "description": "Conexión y calidez en grupo.",
       "category": "retratos"
     },
     {
-      "id": 50,
+      "id": 20,
       "src": "images/portfolio/retrato5.jpg",
-      "title": "Retrato infantil",
-      "description": "Pureza y alegría en la infancia.",
+      "title": "Retrato artístico",
+      "description": "Composición y creatividad.",
       "category": "retratos"
     },
     {
-      "id": 51,
-      "src": "images/portfolio/graduacion1.jpg",
-      "title": "Graduación universitaria",
-      "description": "Celebración y alegría compartida.",
-      "category": "graduacion"
-    },
-    {
-      "id": 52,
-      "src": "images/portfolio/graduacion2.jpg",
-      "title": "Toga y birrete",
-      "description": "Momento de orgullo y logros académicos.",
-      "category": "graduacion"
-    },
-    {
-      "id": 53,
-      "src": "images/portfolio/graduacion3.jpg",
-      "title": "Fiesta de graduación",
-      "description": "Amigos y familia celebrando juntos.",
-      "category": "graduacion"
-    },
-    {
-      "id": 54,
-      "src": "images/portfolio/graduacion4.jpg",
-      "title": "Detalle de diploma",
-      "description": "El símbolo del esfuerzo realizado.",
-      "category": "graduacion"
-    },
-    {
-      "id": 55,
-      "src": "images/portfolio/graduacion5.jpg",
-      "title": "Retrato de graduados",
-      "description": "Miradas llenas de futuro y esperanza.",
-      "category": "graduacion"
-    },
-    {
-      "id": 56,
+      "id": 21,
       "src": "images/portfolio/estudio1.jpg",
       "title": "Sesión de estudio",
       "description": "Fotografía de retrato en estudio profesional.",
       "category": "estudio"
     },
     {
-      "id": 57,
+      "id": 22,
       "src": "images/portfolio/estudio2.jpg",
-      "title": "Fondo de tela",
-      "description": "Textura y color controlado.",
+      "title": "Fotografía de producto",
+      "description": "Iluminación controlada para destacar detalles.",
       "category": "estudio"
     },
     {
-      "id": 58,
+      "id": 23,
       "src": "images/portfolio/estudio3.jpg",
-      "title": "Iluminación artificial",
-      "description": "Luces y sombras diseñadas a medida.",
+      "title": "Retrato de estudio con fondo blanco",
+      "description": "Pureza y minimalismo.",
       "category": "estudio"
     },
     {
-      "id": 59,
+      "id": 24,
       "src": "images/portfolio/estudio4.jpg",
-      "title": "Retrato con atrezzo",
-      "description": "Elementos escénicos que enriquecen la imagen.",
+      "title": "Juego de luces en estudio",
+      "description": "Creando atmósferas con focos.",
       "category": "estudio"
     },
     {
-      "id": 60,
+      "id": 25,
       "src": "images/portfolio/estudio5.jpg",
-      "title": "Sesión de producto",
-      "description": "Fotografía de objetos en estudio.",
+      "title": "Fotografía creativa en estudio",
+      "description": "Experimentación con texturas y sombras.",
       "category": "estudio"
-    },
-    {
-      "id": 61,
-      "src": "images/portfolio/comunion1.jpg",
-      "title": "Primera Comunión",
-      "description": "Día especial para una niña.",
-      "category": "comunion"
-    },
-    {
-      "id": 62,
-      "src": "images/portfolio/comunion2.jpg",
-      "title": "Vestido blanco",
-      "description": "Tradición y elegancia en el atuendo.",
-      "category": "comunion"
-    },
-    {
-      "id": 63,
-      "src": "images/portfolio/comunion3.jpg",
-      "title": "Familia reunida",
-      "description": "Alegría y orgullo familiar.",
-      "category": "comunion"
-    },
-    {
-      "id": 64,
-      "src": "images/portfolio/comunion4.jpg",
-      "title": "Detalle de la vela",
-      "description": "Símbolo de luz y fe.",
-      "category": "comunion"
-    },
-    {
-      "id": 65,
-      "src": "images/portfolio/comunion5.jpg",
-      "title": "Sonrisa de comunión",
-      "description": "Felicidad en el rostro del protagonista.",
-      "category": "comunion"
     }
   ]
 }
