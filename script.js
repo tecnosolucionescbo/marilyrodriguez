@@ -121,14 +121,24 @@ function renderPortfolio(filter = 'all', limit = visibleCount) {
     loadMoreBtn.style.display = currentPhotos.length > limit ? 'inline-block' : 'none';
 }
 
+// ============================================
+// MAPEO DE CATEGORÍAS (NUEVAS)
+// ============================================
 function getCategoryName(category) {
     const names = {
-        bodas: 'Naturaleza',
+        naturaleza: 'Naturaleza',
+        arquitectura: 'Arquitectura',
+        clave_baja: 'Clave Baja',
+        clave_alta: 'Clave Alta',
+        avecofa: 'Avecofa',
+        deporte: 'Deporte',
+        desnudos_artisticos: 'Desnudos Artísticos',
+        paisajes: 'Paisajes',
+        viajes: 'Viajes',
         retratos: 'Retratos',
-        moda: 'Moda',
-        eventos: 'Eventos',
-        familia: 'Familia',
-        comercial: 'Comercial'
+        graduacion: 'Fotos Graduación',
+        estudio: 'Fotos Estudio',
+        comunion: 'Fotos Comunión'
     };
     return names[category] || category;
 }
@@ -302,7 +312,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // INITIALIZE
 // ============================================
 document.addEventListener('DOMContentLoaded', () => {
-    loadPhotos();   // <--- Carga los datos desde photos.json
+    loadPhotos();
     startSlider();
     document.querySelectorAll('section').forEach(section => {
         section.classList.add('reveal');
