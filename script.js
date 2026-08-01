@@ -122,23 +122,15 @@ function renderPortfolio(filter = 'all', limit = visibleCount) {
 }
 
 // ============================================
-// MAPEO DE CATEGORÍAS (NUEVAS)
+// MAPEO DE CATEGORÍAS (SOLO 5)
 // ============================================
 function getCategoryName(category) {
     const names = {
         naturaleza: 'Naturaleza',
-        arquitectura: 'Arquitectura',
-        clave_baja: 'Clave Baja',
-        clave_alta: 'Clave Alta',
-        avecofa: 'Avecofa',
         deporte: 'Deporte',
-        desnudos_artisticos: 'Desnudos Artísticos',
-        paisajes: 'Paisajes',
-        viajes: 'Viajes',
+        formacion: 'Formación',
         retratos: 'Retratos',
-        graduacion: 'Fotos Graduación',
-        estudio: 'Fotos Estudio',
-        comunion: 'Fotos Comunión'
+        estudio: 'Fotos Estudio'
     };
     return names[category] || category;
 }
