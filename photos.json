@@ -1,103 +1,124 @@
 {
-  "_comentario": "Edita este archivo para agregar, eliminar o modificar fotos del portafolio. Cada foto necesita: id (único), src (ruta de la imagen), title (título), description (descripción), category (categoría: bodas, retratos, moda, eventos, familia, comercial)",
+  "_comentario": "Edita este archivo para agregar, eliminar o modificar fotos. Cada foto necesita: id (único), src (ruta), title, description, category (una de las nuevas categorías)",
   "photos": [
     {
       "id": 1,
       "src": "images/portfolio/natu1.jpeg",
       "title": "Amanecer en el bosque",
       "description": "Luz dorada entre los árboles al amanecer.",
-      "category": "bodas"
+      "category": "naturaleza"
     },
     {
       "id": 2,
-      "src": "images/portfolio/retrato1.jpg",
-      "title": "Retrato Artístico",
-      "description": "Sesión de retrato en estudio con iluminación natural.",
-      "category": "retratos"
-    },
-    {
-      "id": 3,
-      "src": "images/portfolio/moda1.jpg",
-      "title": "Colección Primavera",
-      "description": "Shooting para la nueva colección de primavera.",
-      "category": "moda"
-    },
-    {
-      "id": 4,
-      "src": "images/portfolio/evento1.jpg",
-      "title": "Evento Corporativo",
-      "description": "Cobertura del evento anual de la empresa.",
-      "category": "eventos"
-    },
-    {
-      "id": 5,
-      "src": "images/portfolio/familia1.jpg",
-      "title": "Sesión Familiar",
-      "description": "Una tarde divertida capturando momentos familiares.",
-      "category": "familia"
-    },
-    {
-      "id": 6,
-      "src": "images/portfolio/comercial1.jpg",
-      "title": "Producto Gourmet",
-      "description": "Fotografía de producto para catálogo gourmet.",
-      "category": "comercial"
-    },
-    {
-      "id": 7,
       "src": "images/portfolio/natu2.jpeg",
       "title": "Río de montaña",
       "description": "Agua cristalina bajando entre rocas.",
-      "category": "bodas"
+      "category": "naturaleza"
     },
     {
-      "id": 8,
-      "src": "images/portfolio/retrato2.jpg",
-      "title": "Retrato en Exteriores",
-      "description": "Sesión de retrato en el parque al atardecer.",
-      "category": "retratos"
-    },
-    {
-      "id": 9,
-      "src": "images/portfolio/moda2.jpg",
-      "title": "Editorial de Moda",
-      "description": "Editorial para revista de moda local.",
-      "category": "moda"
-    },
-    {
-      "id": 10,
-      "src": "images/portfolio/familia2.jpg",
-      "title": "Maternidad",
-      "description": "Sesión de fotos de maternidad en exteriores.",
-      "category": "familia"
-    },
-    {
-      "id": 11,
+      "id": 3,
       "src": "images/portfolio/natu3.jpeg",
       "title": "Flores silvestres",
       "description": "Color y vida en un prado natural.",
-      "category": "bodas"
+      "category": "naturaleza"
     },
     {
-      "id": 12,
-      "src": "images/portfolio/comercial2.jpg",
-      "title": "Arquitectura",
-      "description": "Fotografía arquitectónica para desarrolladora.",
-      "category": "comercial"
-    },
-    {
-      "id": 13,
+      "id": 4,
       "src": "images/portfolio/natu4.jpeg",
       "title": "Atardecer en el lago",
       "description": "Reflejos naranjas y paz absoluta.",
-      "category": "bodas"
+      "category": "naturaleza"
     },
     {
-      "id": 14,
+      "id": 5,
       "src": "images/portfolio/natu5.jpeg",
       "title": "Sendero de montaña",
       "description": "Camino que invita a explorar la naturaleza.",
-      "category": "bodas"
+      "category": "naturaleza"
+    },
+    {
+      "id": 6,
+      "src": "images/portfolio/arquitectura1.jpg",
+      "title": "Rascacielos moderno",
+      "description": "Líneas verticales y vidrio reflectante.",
+      "category": "arquitectura"
+    },
+    {
+      "id": 7,
+      "src": "images/portfolio/clave_baja1.jpg",
+      "title": "Retrato en clave baja",
+      "description": "Luz dramática y sombras profundas.",
+      "category": "clave_baja"
+    },
+    {
+      "id": 8,
+      "src": "images/portfolio/clave_alta1.jpg",
+      "title": "Blanco y luz",
+      "description": "Alta luminosidad y tonos claros.",
+      "category": "clave_alta"
+    },
+    {
+      "id": 9,
+      "src": "images/portfolio/avecofa1.jpg",
+      "title": "Ave en vuelo",
+      "description": "Captura de un ave en movimiento.",
+      "category": "avecofa"
+    },
+    {
+      "id": 10,
+      "src": "images/portfolio/deporte1.jpg",
+      "title": "Fútbol en acción",
+      "description": "Momento decisivo en un partido.",
+      "category": "deporte"
+    },
+    {
+      "id": 11,
+      "src": "images/portfolio/desnudo1.jpg",
+      "title": "Desnudo artístico",
+      "description": "Estudio de luces y formas humanas.",
+      "category": "desnudos_artisticos"
+    },
+    {
+      "id": 12,
+      "src": "images/portfolio/paisaje1.jpg",
+      "title": "Montañas al atardecer",
+      "description": "Horizonte infinito y colores cálidos.",
+      "category": "paisajes"
+    },
+    {
+      "id": 13,
+      "src": "images/portfolio/viaje1.jpg",
+      "title": "Mercado callejero",
+      "description": "Colores y sabores de un mercado local.",
+      "category": "viajes"
+    },
+    {
+      "id": 14,
+      "src": "images/portfolio/retrato1.jpg",
+      "title": "Retrato en estudio",
+      "description": "Iluminación suave y fondo neutro.",
+      "category": "retratos"
+    },
+    {
+      "id": 15,
+      "src": "images/portfolio/graduacion1.jpg",
+      "title": "Graduación universitaria",
+      "description": "Celebración y alegría compartida.",
+      "category": "graduacion"
+    },
+    {
+      "id": 16,
+      "src": "images/portfolio/estudio1.jpg",
+      "title": "Sesión de estudio",
+      "description": "Fotografía de retrato en estudio profesional.",
+      "category": "estudio"
+    },
+    {
+      "id": 17,
+      "src": "images/portfolio/comunion1.jpg",
+      "title": "Primera Comunión",
+      "description": "Día especial para una niña.",
+      "category": "comunion"
     }
   ]
 }
